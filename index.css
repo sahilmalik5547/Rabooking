@@ -1,0 +1,215 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.c1 {
+    color: #2d7fbe;
+}
+
+.bttn {
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+.bttn:hover {
+    color: #000 !important;
+    background-color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+}
+
+/* nav */
+nav {
+    z-index: 999 !important;
+}
+
+nav .navbar-nav li a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+nav .navbar-nav .dropdown-item:hover {
+    background-color: #000;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* main banner */
+.main-banner {
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-position: center ;
+    position: relative;
+    width: 100%;
+    text-shadow: 0px 0px 5px #000;
+}
+.main-banner .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.main-banner .banner-content .mh1 {
+    color: #fff;
+}
+.main-banner .banner-content .mh2 {
+    color: #fff;
+}
+.banner-1 {
+    background-image: url(./image/RA1.jpg);
+    top: -56px;
+    margin-bottom: -56px;
+}
+.banner-2 {
+    background-image: url(./image/ra2.jpg);
+}
+.banner-3 {
+    background-image: url(./image/ra3.jpg);
+}
+.banner-4 {
+    background-image: url(./image/ra4.jpg);
+}
+.banner-5 {
+    background-image: url(./image/ra5.jpg);
+}
+.banner-6 {
+    background-image: url(./image/ra6.jpg);
+}
+.banner-7 {
+    background-image: url(./image/ra7.jpeg);
+}
+
+/* review section */
+.rev-slider-outer {
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C) !important;
+}
+
+.rev-slider {
+    width: 80%;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.rev-slider .card {
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.rev-slider .card .card-body {
+    width: 80%;
+}
+
+
+.rev-slider .swiper-button-next,
+.rev-slider .swiper-button-prev {
+    color: #fff !important;
+}
+.rev-slider .swiper-button-next{
+    right: 0px !important;
+}
+.rev-slider .swiper-button-prev{
+    left: 0px !important;
+}
+
+
+
+/* subscribe section */
+.sub-sec-outer {
+    background-color: #000;
+}
+.sub-sec {
+    width: 70%;
+}
+
+/* covid section */
+.covid-outer {
+    background-color: #c1c1c1;
+}
+.covid {
+    width: 70%;
+    color: #000;
+}
+
+/* foooter section */
+.foot {
+    width: 80%;
+}
+.foot a {
+    color: #000;
+}
+.foot a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.foot select{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* media query */
+@media screen and (min-width:768px) {
+    .mob {
+        display: none;
+    }
+    .main-banner {
+        height: 100vh;
+    }
+    .main-banner .banner-content .mh1 {
+        font-size: 7vh;
+    }
+    .main-banner .banner-content .mh2 {
+        font-size: 4vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .desk {
+        display: none !important;
+    }
+    .main-banner {
+        height: 60vh;
+    }
+    .main-banner .banner-content .mh1 {
+        font-size: 2rem;
+    }
+    .main-banner .banner-content .mh2 {
+        font-size: 1.25rem;
+    }
+}
